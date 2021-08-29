@@ -1,0 +1,238 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    font-weight: 300;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* header styles */
+.headerContainer {
+    display: block;
+    text-align: center;
+    padding: 60px 0;
+    height: 100%;
+    width: 100%;
+    background: url(../assets/Test_Assets/Header_Desktop.jpg);
+    background-size: cover;
+}
+
+.title {
+    height: 38.98px;
+    width: 100%;
+}
+
+.sectionTitle {
+    height: 86px;
+    width: 100%;
+}
+
+.title img {
+    width: 245.23px;
+    height: 38.98px;
+}
+
+.sectionTitle h1 {
+    font-size: 52px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Product Styles */
+
+.productContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.imageSection {
+    width: 30%;
+    height: 100%;
+}
+
+.tablet {
+    display: none;
+}
+
+.descriptionSection {
+    width: 40%;
+    margin: 2%
+}
+
+.registerSection {
+    width: 20%;
+}
+
+.imageSection img {
+    width: 100%;
+    height: 100%
+}
+
+.buyNowButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.iosContainer {
+    margin-right: 25px;
+}
+
+.registerSection {
+    background: linear-gradient(#071C29, #16374B);
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+}
+.registerSection h3 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+.registerSection li {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 7px;
+    font-weight: 200;
+}
+
+.registerSection p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 7px;
+    font-weight: 200;
+}
+
+.buttonContainer {
+    background: linear-gradient(#FAFAFA, #F0F0F0);
+    border: solid 1px #A8A8A8;
+    border-radius: 5px;
+    width: 35%;
+    height: 20%;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.buttonContainer img {
+    width: 19px;
+    height: 23.25px;
+    margin-left: 5px;
+}
+
+.descriptionBttn {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0px 3px 6px #0000004B;
+    color: white;
+    background: linear-gradient(#FC5D37, #ED5132, #E64525)
+}
+
+.registerButton {
+    width: 80%;
+    border: 0;
+    border-radius: 60px;
+    padding: 15px;
+    margin-left: 17px;
+    background: linear-gradient(#FFD063, #F2B134);
+    box-shadow: 2px 12px 13px #00000054;
+    font-size: 20px;
+}
+
+.lineBreak {
+    border-top: .5px solid white;
+    margin: 25px 0;
+}
+
+/* Optional Section Styles */
+.optionalContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background: linear-gradient(#F5F5F5, #FFFFFF);
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.optionalContainer button {
+    width: 35%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .descriptionSection {
+        width: 65%;
+        height: 100%;
+    }
+    .registerSection {
+        width: 30%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .headerContainer {
+        background: url(../assets/Test_Assets/Header_Mobile.jpg) no-repeat;
+    }
+    .productContainer {
+        flex-direction: column;
+    }
+    .descriptionSection {
+        order: 2;
+        width: 100%;
+        height: 100%;
+    }
+    .registerSection {
+        order: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .registerSection div:first-child {
+        padding-right: 12px;
+        border-right: 1px white solid;
+    }
+    .registerSection div:nth-child(2) {
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .sectionTitle {
+        height: 100%;
+        width: 100%;
+    }
+    .sectionTitle h1 {
+        font-size: 32px;
+    }
+    .registerSection {
+        flex-direction: column;
+    }
+    .registerSection div:first-child {
+        padding-right: 12px;
+        border-right: 0;
+    }
+}
